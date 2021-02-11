@@ -20,7 +20,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="header__description">
-                <h2>Immersive experiences that deliver</h2>
+                    <h2>Immersive experiences that deliver</h2>
                 </div>
             </header>
         </React.Fragment>

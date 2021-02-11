@@ -12,6 +12,10 @@
   font-size: 15px;
 }
 
+a{
+  color: var(--white);
+}
+
 :root{
   --white:#ffffff;
   --black: #000000;

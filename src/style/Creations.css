@@ -1,0 +1,41 @@
+.creations{
+    height: auto;
+    width: 85%;
+    margin: 0 auto;
+}
+.creations__title{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.creations__title h3{
+    font-size: 3rem;
+    font-family: 'Josefin Sans';
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.creations__title .creations__btn{
+    width: 150px;
+    height: 40px;
+    letter-spacing: .2rem;
+    border-radius: 3px;
+    border: .15rem solid var(--very-dark-gray);
+    text-transform: uppercase;
+    background-color: transparent;
+}
+.creations__images{
+    width: 100%;
+}
+.creations__images-grid{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.creations__images-grid img{
+    width: 100%;
+}
+.creations__images-grid img:hover{
+    opacity: .5;
+}

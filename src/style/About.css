@@ -1,0 +1,24 @@
+.about{
+    height: 100vh;
+    width: 85%;
+    margin: 0 auto;
+}
+.about__description{
+    position: relative;
+    padding: 90px;
+    left: calc(50% - 10px);
+    bottom: 300px;
+    width: 50%;
+    background-color: var(--white);
+    color: var(--white);
+}
+.about__description h3{
+    color: var(--black);
+    font-size: 3rem;
+    font-family: 'Josefin Sans';
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.about__description p{
+    color: var(--dark-gray);
+}

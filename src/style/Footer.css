@@ -1,0 +1,36 @@
+.footer{
+    display: grid;
+    padding: 40px 100px;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    color: var(--white);
+    background-color: black;
+}
+
+.footer__menu{
+    margin-right: 70px;
+    display: flex;
+}
+
+.footer__menu li{
+    margin-right: 30px;
+}
+
+.footer__redes{
+    text-align: end;
+}
+.footer__redes img{
+    margin-left: 20px;
+}
+
+.footer__info{
+    text-align: end;
+}
+.footer__info span{
+    color: var(--very-dark-gray);
+    padding-bottom: 10px;
+}
+.footer__info p{
+    font-weight: normal;
+}
