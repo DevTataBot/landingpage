@@ -1,6 +1,6 @@
 .footer{
     display: grid;
-    padding: 40px 100px;
+    padding: 30px 100px;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -33,4 +33,30 @@
 }
 .footer__info p{
     font-weight: normal;
+}
+
+@media screen and (max-width: 910px){
+    .footer{
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .footer__menu{
+        margin: 0;
+    }
+    .footer__redes{
+        order: 1;
+    }
+    .footer__info{
+        order: 1;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:460px){
+    .footer__menu li{
+        margin-right: 5px;
+    }
 }

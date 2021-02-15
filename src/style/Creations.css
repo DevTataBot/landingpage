@@ -10,6 +10,12 @@
     align-items: center;
     justify-content: space-between;
 }
+.title{
+    display: none;
+}
+.btn{
+    display: none;
+}
 .creations__title h3{
     font-size: 3rem;
     font-family: 'Josefin Sans';
@@ -38,4 +44,42 @@
 }
 .creations__images-grid img:hover{
     opacity: .5;
+}
+
+@media screen and (max-width:910px){
+    .creations__title{
+        display: none;
+    }
+    .title{
+        display: flex;
+        font-size: 3rem;
+        font-family: 'Josefin Sans';
+        font-weight: lighter;
+        justify-content: center;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 40px;
+        letter-spacing: .2rem;
+        border-radius: 3px;
+        margin: 0 auto;
+        order: 2;
+        border: .15rem solid var(--very-dark-gray);
+        text-transform: uppercase;
+        margin-top: 20px;
+        background-color: transparent;
+    }
+    .creations{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .creations__images-grid{
+        grid-template-columns: 1fr;
+    }
+
 }

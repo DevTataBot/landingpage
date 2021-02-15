@@ -20,6 +20,10 @@ const Creations = () => {
                     <h3>Our Creations</h3>
                     <button className="creations__btn">See all</button>
                 </div>
+
+                <h3 className="title">Our Creations</h3>
+                <button className="btn">See all</button>
+                
                 <div className="creations__images">
                     <figure className="creations__images-grid">
                         <img src={deep} alt=""/>

@@ -11,6 +11,7 @@ const Header = () => {
                     <figure className="header__figure">
                         <img src={logo} alt="Logo"/>
                     </figure>
+                    <div className="hamburger">menu</div>
                     <ul className="header__menu">
                         <li className="header__menu-item">About</li>
                         <li className="header__menu-item">Careers</li>

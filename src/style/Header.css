@@ -32,8 +32,12 @@
     border: 2px solid var(--white);
     margin-top: 100px;
     margin-left: 100px;
+    margin-bottom: 20px;
     text-align: left;
     padding: 30px;
+}
+.hamgurger{
+    display: none;
 }
 .header__description h2{
     font-size: 4.5rem;
@@ -41,4 +45,42 @@
     font-family: 'Josefin Sans';
     font-weight: lighter;
     text-transform: uppercase;
+}
+
+@media screen and (max-width:1160px){
+    .header__description{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .header__description h2{
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width:910px){
+    .header__figure img{
+        width: 150px;
+    }
+    .header__menu{
+        display: none;
+    }
+    .hamgurger{
+        display: flex;
+    }
+    .header__description{
+        width: 75%;
+        margin: 100px auto;
+    }
+}
+@media screen and (max-width:590px){
+    .header__description h2{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:460px){
+    .header__description{
+        padding: 10px;
+    }
+    .header__description h2{
+        font-size: 2rem;
+    }
 }
