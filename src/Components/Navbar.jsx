@@ -3,7 +3,7 @@ import '../style/Navbar.css'
 
 const Navbar = ( { open } ) => {
     return(
-        <ul className={open ? "menu" : "oculto"} open={open}>
+        <ul className={open ? "menu_bar menu" : "menu_bar oculto"} open={open}>
             <li className="menu-item">About</li>
             <li className="menu-item">Careers</li>
             <li className="menu-item">Events</li>
