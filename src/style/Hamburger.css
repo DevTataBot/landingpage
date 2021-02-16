@@ -1,0 +1,18 @@
+.hamburger{
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+@media screen and (max-width:910px){
+    .oculto{
+        display: none;
+    }
+    .hamburger{
+        display: flex;        
+        
+    }
+    .close{
+        display: flex;
+    }
+}

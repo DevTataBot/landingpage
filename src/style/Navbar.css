@@ -1,0 +1,42 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+.menu-item{
+    margin-left: 20px;
+    color: var(--white);
+    font-weight: lighter;
+    font-size: 1rem;
+} 
+
+@media screen and (max-width:910px){
+    .oculto{
+        display: none;
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+    }
+    .menu{
+        position: absolute;
+        width: 100%;
+        top:0;
+        left: 0;
+        height: 100vh;
+        padding-top: 40px;
+        justify-content: space-evenly;        
+        flex-direction: column;
+        background-color: var(--black);
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transition: transform .5s ease-in;
+        z-index: -10;        
+    }
+    .menu-item{
+        font-family: 'Josefin Sans';
+        font-weight: lighter;
+        text-transform: uppercase;
+
+    }
+    .menu-item li{
+        color: white;
+    }
+}

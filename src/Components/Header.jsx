@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from '../images/logo.svg'
 import '../style/Header.css'
+import Hamburger from './Hamburger';
+import Navbar from './Navbar';
 
 const Header = () => {
     
+    const [open, setOpen] = useState(false)
+
+    const handleclick = () => {
+        setOpen(!open)
+    }
+
     return(
         <React.Fragment>
            <header className="header">
@@ -11,14 +19,8 @@ const Header = () => {
                     <figure className="header__figure">
                         <img src={logo} alt="Logo"/>
                     </figure>
-                    <div className="hamburger">menu</div>
-                    <ul className="header__menu">
-                        <li className="header__menu-item">About</li>
-                        <li className="header__menu-item">Careers</li>
-                        <li className="header__menu-item">Events</li>
-                        <li className="header__menu-item">Products</li>
-                        <li className="header__menu-item">Support</li>
-                    </ul>
+                    <Hamburger handleclick={handleclick}/>
+                    <Navbar open={open}/>
                 </div>
                 <div className="header__description">
                     <h2>Immersive experiences that deliver</h2>
