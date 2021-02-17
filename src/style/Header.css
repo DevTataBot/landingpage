@@ -51,6 +51,9 @@
     }
 }
 @media screen and (max-width:910px){
+    .header__navbar--position{
+        position: fixed;
+    }
     .header__figure img{
         width: 150px;
     }

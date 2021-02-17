@@ -15,7 +15,7 @@ const Header = () => {
     return(
         <React.Fragment>
            <header className="header">
-                <div className="header__navbar">
+                <div className={!open ? "header__navbar" : "header__navbar--position header__navbar"}>
                     <figure className="header__figure">
                         <img src={logo} alt="Logo"/>
                     </figure>
